@@ -6,6 +6,7 @@
   <title>Mortgage Payoff Calculator - Pay Off Your Home Faster | PayoffMortgage.org</title>
   <meta name="description" content="Free mortgage payoff calculator. See how extra payments, biweekly schedules, and lump sums can save you thousands in interest and help you own your home sooner.">
   <link rel="canonical" href="https://payoffmortgage.org/">
+  <meta name="robots" content="index, follow">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -176,6 +177,10 @@
       color: var(--muted);
       font-size: 0.85rem;
     }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
+    .footer-links { margin-bottom: 8px; }
+    .footer-links a { margin: 0 12px; }
 
     @media (max-width: 640px) {
       .hero { padding: 40px 0 32px; }
@@ -189,15 +194,85 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8767713037568144"
     crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much can I save by paying extra on my mortgage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The savings depend on your loan balance, interest rate, and how much extra you pay. On a typical $325,000 mortgage at 6.72%, adding just $100 per month to your payment saves approximately $39,400 in interest and pays off the loan 4 years early. Adding $250/month saves over $79,000 and cuts 8 years off the loan. Even a single annual lump-sum payment of $1,000 can save thousands over the life of the mortgage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I refinance my mortgage in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As of February 2026, the average 30-year fixed mortgage rate is 6.72% (Freddie Mac). Refinancing typically makes sense if you can lower your rate by at least 0.5% to 0.75% and plan to stay in your home long enough to recoup closing costs (usually 2-5% of the loan amount). The Consumer Financial Protection Bureau recommends reviewing your mortgage annually for refinancing opportunities. Use a break-even calculator to determine if refinancing is worthwhile for your specific situation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's better: extra mortgage payments or investing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This depends on your mortgage rate versus expected investment returns. If your mortgage rate is 6.72%, every extra dollar paid toward principal earns you a guaranteed 6.72% return (in saved interest). The S&P 500 has historically returned about 10% annually before inflation, but returns are not guaranteed and can be negative in any given year. Many financial advisors suggest a balanced approach: ensure you have an emergency fund and maximize employer 401(k) matching first, then split extra money between mortgage paydown and investing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does biweekly payment save money?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A biweekly mortgage payment schedule means paying half your monthly payment every two weeks instead of a full payment once a month. Since there are 52 weeks in a year, you make 26 half-payments, which equals 13 full monthly payments instead of the standard 12. That one extra payment per year goes directly to principal, which on a $325,000 mortgage at 6.72% can save over $27,000 in interest and cut approximately 5 years off a 30-year loan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is mortgage amortization?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mortgage amortization is the process of gradually paying off your loan through scheduled payments over time. Each payment is split between interest and principal. In the early years of a mortgage, the majority of each payment goes toward interest. For example, on a $325,000 mortgage at 6.72%, your first monthly payment of $2,108 includes $1,820 in interest and only $288 toward principal. Over time, the interest portion decreases and the principal portion increases. Understanding amortization is key to seeing why extra payments early in the loan have the greatest impact."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PayoffMortgage.org",
+    "url": "https://payoffmortgage.org/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PayoffMortgage.org",
+    "url": "https://payoffmortgage.org/",
+    "description": "Free mortgage payoff calculator and home loan guides.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PayoffMortgage.org"
+    }
+  }
+  </script>
 </head>
 <body>
 
   <header>
     <div class="container">
-      <div class="logo">PayoffMortgage.org</div>
+      <a href="/" class="logo">PayoffMortgage.org</a>
       <nav>
         <a href="/">Calculator</a>
-        <a href="/blog/mortgage-payment-strategies-complete-guide-2026.html">Blog</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about">About</a>
       </nav>
     </div>
   </header>
@@ -230,14 +305,69 @@
       </div>
     </div>
 
+    <section style="padding: 2rem 0 0;">
+      <div class="container">
+        <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.25rem;">Understanding Your Mortgage in 2026</h2>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1.15rem;">The average 30-year fixed mortgage rate has dropped to <strong>6.72%</strong> as of February 2026, according to Freddie Mac's Primary Mortgage Market Survey. This is down from the 7.22% peak reached in May 2024, offering a degree of relief for homebuyers and existing homeowners considering refinancing. However, rates remain well above the 2.65%-3.5% range seen during 2020-2021, which means interest costs still make up a significant portion of total housing expense.</p>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1.15rem;">The median U.S. home price is approximately <strong>$407,500</strong> according to the National Association of Realtors (NAR, January 2026). With a 20% down payment of $81,500, that translates to a $326,000 mortgage. At 6.72% over 30 years, the monthly principal and interest payment is approximately <strong>$2,108</strong>. Over the full life of the loan, you would pay a total of $433,880 in interest alone — more than the original loan amount. This is why understanding mortgage payoff strategies is critical for any homeowner looking to build equity and reduce lifetime borrowing costs. For a complete breakdown of strategies, see our <a href="/blog/mortgage-payment-strategies-complete-guide-2026">Mortgage Payment Strategies Guide for 2026</a>.</p>
+
+        <h3 style="font-size: 1.15rem; font-weight: 700; margin: 1.75rem 0 0.75rem;">How Extra Payments Save You Money</h3>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1.15rem;">One of the most effective ways to reduce your total mortgage cost is making extra principal payments. Because mortgage interest is calculated on the outstanding balance, every extra dollar you pay toward principal reduces the base on which future interest is charged. The effect compounds over time — similar to how compound interest works in your favor with savings, except here it works <em>against</em> the lender's interest earnings. Adding just <strong>$100 per month</strong> in extra payments on a $325,000 mortgage at 6.72% saves approximately <strong>$39,400 in total interest</strong> and pays off the loan nearly <strong>4 years early</strong>. Increasing that to $250/month saves over $79,000 and cuts 8 years off the loan term.</p>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1.15rem;">Another popular strategy is <strong>biweekly payments</strong>. Instead of making one monthly payment, you pay half the amount every two weeks. Since there are 52 weeks in a year, this results in 26 half-payments — equivalent to 13 full monthly payments instead of 12. That one extra annual payment goes entirely toward principal. On a $325,000 mortgage at 6.72%, biweekly payments can save over <strong>$27,000 in interest</strong> and cut approximately <strong>5 years</strong> off a 30-year loan. Learn more in our <a href="/blog/biweekly-vs-monthly-mortgage-payments">comparison of biweekly vs. monthly payments</a>.</p>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1.15rem;">Refinancing is another powerful lever. Dropping your rate from 7% to 6.5% on a $325,000 balance saves roughly <strong>$38,000</strong> over the remaining life of the loan. The Consumer Financial Protection Bureau (CFPB) recommends reviewing your mortgage at least annually to assess whether refinancing makes financial sense given current rates and your remaining balance. The general rule of thumb is that a rate reduction of 0.5% to 0.75% or more can justify refinancing costs, though the exact break-even point depends on closing costs and how long you plan to stay in the home. For a detailed look at how even small extra payments create a compounding reduction in interest, read our article on <a href="/blog/how-extra-payments-reduce-mortgage-interest">how extra payments reduce mortgage interest</a>.</p>
+      </div>
+    </section>
+
+    <section style="padding: 1.5rem 0 2rem;">
+      <div class="container">
+        <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.25rem;">Frequently Asked Questions</h2>
+        <div style="display: grid; gap: 1rem;">
+          <details style="background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem;">
+            <summary style="font-weight: 600; font-size: 1rem; cursor: pointer; color: var(--text);">How much can I save by paying extra on my mortgage?</summary>
+            <p style="color: var(--muted); font-size: 0.92rem; margin-top: 0.75rem;">The savings depend on your loan balance, interest rate, and how much extra you pay. On a typical $325,000 mortgage at 6.72%, adding just $100 per month to your payment saves approximately $39,400 in interest and pays off the loan 4 years early. Adding $250/month saves over $79,000 and cuts 8 years off the loan. Even a single annual lump-sum payment of $1,000 can save thousands over the life of the mortgage. Use our calculator above to model your exact scenario.</p>
+          </details>
+          <details style="background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem;">
+            <summary style="font-weight: 600; font-size: 1rem; cursor: pointer; color: var(--text);">Should I refinance my mortgage in 2026?</summary>
+            <p style="color: var(--muted); font-size: 0.92rem; margin-top: 0.75rem;">As of February 2026, the average 30-year fixed mortgage rate is 6.72% (Freddie Mac). Refinancing typically makes sense if you can lower your rate by at least 0.5% to 0.75% and plan to stay in your home long enough to recoup closing costs, which usually run 2-5% of the loan amount. The Consumer Financial Protection Bureau recommends reviewing your mortgage annually for refinancing opportunities. Use a break-even calculator to determine if refinancing is worthwhile for your specific situation.</p>
+          </details>
+          <details style="background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem;">
+            <summary style="font-weight: 600; font-size: 1rem; cursor: pointer; color: var(--text);">What's better: extra mortgage payments or investing?</summary>
+            <p style="color: var(--muted); font-size: 0.92rem; margin-top: 0.75rem;">This depends on your mortgage rate versus expected investment returns. If your mortgage rate is 6.72%, every extra dollar paid toward principal earns you a guaranteed 6.72% return in saved interest. The S&P 500 has historically returned about 10% annually before inflation, but returns are not guaranteed and can be negative in any given year. Many financial advisors suggest a balanced approach: ensure you have an emergency fund and maximize employer 401(k) matching first, then split extra money between mortgage paydown and investing based on your risk tolerance.</p>
+          </details>
+          <details style="background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem;">
+            <summary style="font-weight: 600; font-size: 1rem; cursor: pointer; color: var(--text);">How does biweekly payment save money?</summary>
+            <p style="color: var(--muted); font-size: 0.92rem; margin-top: 0.75rem;">A biweekly mortgage payment schedule means paying half your monthly payment every two weeks instead of a full payment once a month. Since there are 52 weeks in a year, you make 26 half-payments, which equals 13 full monthly payments instead of the standard 12. That one extra payment per year goes directly to principal. On a $325,000 mortgage at 6.72%, this approach can save over $27,000 in interest and cut approximately 5 years off a 30-year loan. Not all servicers offer biweekly programs — check with yours or set up automatic transfers yourself.</p>
+          </details>
+          <details style="background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem;">
+            <summary style="font-weight: 600; font-size: 1rem; cursor: pointer; color: var(--text);">What is mortgage amortization?</summary>
+            <p style="color: var(--muted); font-size: 0.92rem; margin-top: 0.75rem;">Mortgage amortization is the process of gradually paying off your loan through scheduled payments over time. Each payment is split between interest and principal. In the early years, the majority of each payment goes toward interest. For example, on a $325,000 mortgage at 6.72%, your first monthly payment of $2,108 includes about $1,820 in interest and only $288 toward principal. Over time, the interest portion decreases and the principal portion increases. Understanding amortization is key to seeing why extra payments early in the loan have the greatest impact on total interest savings.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <section class="blog-section">
       <div class="container">
         <h2>From the Blog</h2>
         <article class="blog-card">
           <span class="tag">Guide</span>
-          <h3><a href="/blog/mortgage-payment-strategies-complete-guide-2026.html">Mortgage Payment Strategies: A Complete Guide for 2026</a></h3>
+          <h3><a href="/blog/mortgage-payment-strategies-complete-guide-2026">Mortgage Payment Strategies: A Complete Guide for 2026</a></h3>
           <p>Learn how biweekly payments, extra principal, refinancing, and other strategies can shave years off your mortgage and save tens of thousands in interest.</p>
-          <a href="/blog/mortgage-payment-strategies-complete-guide-2026.html" class="read-more">Read the full guide &rarr;</a>
+          <a href="/blog/mortgage-payment-strategies-complete-guide-2026" class="read-more">Read the full guide &rarr;</a>
+        </article>
+
+        <article class="blog-card" style="margin-top: 20px;">
+          <span class="tag">Strategy</span>
+          <h3><a href="/blog/biweekly-vs-monthly-mortgage-payments">Biweekly vs Monthly Mortgage Payments: Which Saves You More?</a></h3>
+          <p>Compare biweekly and monthly payment schedules with real calculator examples. See how switching to biweekly payments can save you tens of thousands in interest.</p>
+          <a href="/blog/biweekly-vs-monthly-mortgage-payments" class="read-more">Read the full article &rarr;</a>
+        </article>
+
+        <article class="blog-card" style="margin-top: 20px;">
+          <span class="tag">Deep Dive</span>
+          <h3><a href="/blog/how-extra-payments-reduce-mortgage-interest">How Extra Payments Reduce Mortgage Interest: The Snowball Effect</a></h3>
+          <p>Discover how even small extra principal payments create a compounding snowball effect that can save you $50K to $250K+ in interest on a $300K mortgage.</p>
+          <a href="/blog/how-extra-payments-reduce-mortgage-interest" class="read-more">Read the full article &rarr;</a>
         </article>
       </div>
     </section>
@@ -255,12 +385,63 @@
       </div>
     </div>
   </main>
+    
+      <section style="margin: 2rem 0 3rem;">
+        <h2 class="section-title">Mortgage Rates and Loan Comparison (February 2026)</h2>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;">Choosing the right mortgage type significantly affects your total interest paid and monthly payments. This comparison shows current rates and total costs on a $400,000 home loan.</p>
+        <div style="overflow-x: auto;">
+        <table style="width:100%;border-collapse:collapse;background:#fff;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;font-size:0.92rem;">
+          <thead>
+            <tr style="background:#f0fdf4;">
+              <th style="padding:12px 16px;text-align:left;font-weight:600;border-bottom:2px solid #e2e8f0;">Loan Type</th>
+              <th style="padding:12px 16px;text-align:center;font-weight:600;border-bottom:2px solid #e2e8f0;">Avg. Rate</th>
+              <th style="padding:12px 16px;text-align:center;font-weight:600;border-bottom:2px solid #e2e8f0;">Monthly Payment</th>
+              <th style="padding:12px 16px;text-align:center;font-weight:600;border-bottom:2px solid #e2e8f0;">Total Interest</th>
+              <th style="padding:12px 16px;text-align:left;font-weight:600;border-bottom:2px solid #e2e8f0;">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="padding:10px 16px;border-bottom:1px solid #f1f5f9;">30-Year Fixed</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">6.87%</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">$2,631</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">$547,160</td><td style="padding:10px 16px;border-bottom:1px solid #f1f5f9;"><a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a></td></tr>
+            <tr><td style="padding:10px 16px;border-bottom:1px solid #f1f5f9;">15-Year Fixed</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">6.09%</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">$3,396</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">$211,280</td><td style="padding:10px 16px;border-bottom:1px solid #f1f5f9;"><a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a></td></tr>
+            <tr><td style="padding:10px 16px;border-bottom:1px solid #f1f5f9;">5/1 ARM</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">6.30%</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">$2,485*</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">Varies</td><td style="padding:10px 16px;border-bottom:1px solid #f1f5f9;"><a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a></td></tr>
+            <tr><td style="padding:10px 16px;border-bottom:1px solid #f1f5f9;">FHA 30-Year</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">6.48%</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">$2,525</td><td style="padding:10px 16px;text-align:center;border-bottom:1px solid #f1f5f9;">$509,000</td><td style="padding:10px 16px;border-bottom:1px solid #f1f5f9;"><a href="https://www.hud.gov/program_offices/housing/sfh/ins/203b--df" target="_blank" rel="noopener">HUD/FHA</a></td></tr>
+            <tr><td style="padding:10px 16px;">VA 30-Year</td><td style="padding:10px 16px;text-align:center;">6.29%</td><td style="padding:10px 16px;text-align:center;">$2,484</td><td style="padding:10px 16px;text-align:center;">$494,240</td><td style="padding:10px 16px;"><a href="https://www.va.gov/housing-assistance/home-loans/" target="_blank" rel="noopener">VA Home Loans</a></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p style="color: var(--muted); font-size: 0.82rem; margin-top: 0.75rem; font-style: italic;">Sources: Freddie Mac Primary Mortgage Market Survey (Feb 2026), HUD, VA. Monthly payments exclude taxes, insurance, and PMI/MIP. *ARM initial period payment shown. Total interest calculated over full loan term at stated rate.</p>
+      </section>
+
+    <section class="site-author" style="max-width:720px;margin:48px auto;padding:0 20px;">
+      <div style="display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:24px;">
+        <div style="width:56px;height:56px;border-radius:50%;background:#ccfbf1;color:#0f766e;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;flex-shrink:0;">DP</div>
+        <div>
+          <span style="font-weight:700;font-size:0.95rem;display:block;">Written by Daniel Park</span>
+          <span style="color:#64748b;font-size:0.82rem;display:block;margin-bottom:8px;">Mortgage &amp; Housing Finance Analyst</span>
+          <p style="font-size:0.88rem;color:#64748b;margin:0;line-height:1.5;">Daniel Park covers mortgage strategies and housing finance. He studied Economics at UC Berkeley and spent five years in mortgage lending before moving into financial education. He specializes in early payoff strategies and refinancing analysis.</p>
+        </div>
+      </div>
+    </section>
+
 
   <footer>
     <div class="container">
+      <div class="footer-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="/disclaimer">Disclaimer</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
       <p>&copy; 2026 PayoffMortgage.org. All rights reserved.</p>
     </div>
   </footer>
 
+
+  <div class="cookie-bar" id="cookie-consent" style="position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#e2e8f0;padding:14px 20px;font-size:0.85rem;display:flex;align-items:center;justify-content:center;gap:16px;z-index:9999;flex-wrap:wrap;">
+    <span>We use cookies for analytics and advertising. By continuing, you agree to our <a href="/privacy-policy" style="color:#0f766e;text-decoration:underline;">Privacy Policy</a>.</span>
+    <button onclick="document.getElementById('cookie-consent').style.display='none';document.cookie='cc=1;path=/;max-age=31536000'" style="background:#0f766e;color:#fff;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-weight:600;font-size:0.82rem;white-space:nowrap;">Got it</button>
+  </div>
+  <script>if(document.cookie.indexOf('cc=1')!==-1)document.getElementById('cookie-consent').style.display='none';</script>
 </body>
 </html>

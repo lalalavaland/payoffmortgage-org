@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refinancing vs Extra Payments: Which Strategy Saves More on Your Mortgage? | PayoffMortgage.org</title>
+  <meta name="description" content="Compare refinancing vs making extra payments on your mortgage. Includes break-even calculations, real number scenarios on a $300k mortgage, tax implications, and hybrid strategies to save the most.">
+  <link rel="canonical" href="https://payoffmortgage.org/blog/refinancing-vs-extra-payments">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Refinancing vs Extra Payments: Which Strategy Saves More on Your Mortgage?">
+  <meta property="og:description" content="Compare refinancing vs making extra payments on your mortgage. Includes break-even calculations, real number scenarios, tax implications, and hybrid strategies.">
+  <meta property="og:url" content="https://payoffmortgage.org/blog/refinancing-vs-extra-payments">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PayoffMortgage.org">
+  <meta property="article:published_time" content="2026-02-11">
+  <meta property="article:modified_time" content="2026-02-16">
+  <meta property="article:author" content="Daniel Park">
+  <meta property="article:section" content="Mortgage Strategies">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f8fafc;
+      --surface: #fff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #0f766e;
+      --accent-light: #ccfbf1;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    nav a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-left: 24px;
+    }
+    nav a:hover { color: var(--accent); text-decoration: none; }
+
+    /* Article */
+    .article-header {
+      padding: 56px 0 32px;
+    }
+    .article-header .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+    .article-header h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .article-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .article-body {
+      padding-bottom: 48px;
+    }
+    .article-body h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 40px 0 16px;
+      padding-top: 8px;
+    }
+    .article-body h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+    }
+    .article-body p {
+      margin-bottom: 16px;
+    }
+    .article-body ul, .article-body ol {
+      margin: 0 0 16px 24px;
+    }
+    .article-body li {
+      margin-bottom: 6px;
+    }
+    .article-body strong {
+      font-weight: 600;
+    }
+
+    .callout {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 0.95rem;
+    }
+    .callout strong { color: var(--accent); }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 0.92rem;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .comparison-table th {
+      background: var(--bg);
+      font-weight: 600;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--muted);
+    }
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .comparison-table td:last-child { font-weight: 600; color: var(--accent); }
+
+    /* Ad slot */
+    .ad-slot {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin: 32px auto;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* CTA */
+    .cta-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+      margin: 40px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .cta-card h3 { margin-bottom: 8px; font-size: 1.15rem; }
+    .cta-card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 16px; }
+    .cta-card a.btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.15s;
+    }
+    .cta-card a.btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
+    .footer-links { margin-bottom: 8px; }
+    .footer-links a { margin: 0 12px; }
+
+    @media (max-width: 640px) {
+      .article-header { padding: 36px 0 24px; }
+      .article-header h1 { font-size: 1.6rem; }
+      .comparison-table { font-size: 0.84rem; }
+      .comparison-table th, .comparison-table td { padding: 10px 12px; }
+    }
+  </style>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8767713037568144"
+    crossorigin="anonymous"></script>
+
+  <!-- JSON-LD Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Refinancing vs Extra Payments: Which Strategy Saves More on Your Mortgage?",
+    "description": "Compare refinancing vs making extra payments on your mortgage. Includes break-even calculations, real number scenarios on a $300k mortgage, tax implications, and hybrid strategies to save the most.",
+    "datePublished": "2026-02-11",
+    "dateModified": "2026-02-11",
+    "author": {"@type": "Organization", "name": "PayoffMortgage Editorial Team", "description": "Mortgage and Housing Research"},
+    "author": {"@type": "Person", "name": "Daniel Park", "jobTitle": "Mortgage & Housing Finance Analyst", "description": "Daniel Park covers mortgage strategies and housing finance. He studied Economics at UC Berkeley and spent five years in mortgage lending before moving into financial education. He specializes in early payoff strategies and refinancing analysis."},
+    "publisher": {
+      "@type": "Organization",
+      "name": "PayoffMortgage.org",
+      "url": "https://payoffmortgage.org"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://payoffmortgage.org/blog/refinancing-vs-extra-payments.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://payoffmortgage.org/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://payoffmortgage.org/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "Refinancing vs Extra Payments: Which Strategy Saves More on Your Mortgage?"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="/" class="logo">PayoffMortgage.org</a>
+      <nav>
+        <a href="/">Calculator</a>
+        <a href="/blog/mortgage-payment-strategies-complete-guide-2026">Blog</a>
+        <a href="/about">About</a>
+      </nav>
+    </div>
+  </header>
+  <div style="max-width:720px;margin:0 auto;padding:0 20px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:12px 0;font-size:0.82rem;color:#64748b;">
+      <a href="/" style="color:#64748b;">Home</a><span style="margin:0 6px;">/</span>
+      <a href="/blog/" style="color:#64748b;">Blog</a><span style="margin:0 6px;">/</span>
+      <span>Refinancing vs Extra Payments: Which Strategy Saves More on Your Mortgage?</span>
+    </nav>
+  </div>
+
+  <main>
+    <article>
+      <div class="container">
+        <div class="article-header">
+          <span class="tag">Strategy</span>
+          <h1>Refinancing vs Extra Payments: Which Strategy Saves More on Your Mortgage?</h1>
+          <p class="article-meta">By <strong>Daniel Park</strong>, Mortgage &amp; Housing Finance Analyst &middot; Updated 2026-02-16</p>
+        </div>
+
+        <div class="article-body">
+
+          <p>If you are looking to save money on your mortgage, two strategies come up more than any other: <strong>refinancing to a lower interest rate</strong> and <strong>making extra payments toward your principal</strong>. Both can save you tens of thousands of dollars and shave years off your loan. But they work in very different ways, carry different costs and risks, and the right choice depends heavily on your specific situation.</p>
+
+<nav class="toc" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0 2rem;">
+  <p style="font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted,#64748b);margin-bottom:0.75rem;">In This Article</p>
+  <ol style="margin:0;padding-left:1.25rem;font-size:0.93rem;line-height:1.9;">
+    <li><a href="#how-refinancing-works">How Refinancing Works</a></li><li><a href="#the-break-even-calculation">The Break-Even Calculation</a></li><li><a href="#how-extra-payments-work">How Extra Payments Work</a></li><li><a href="#comparing-scenarios-with-real-numbers">Comparing Scenarios with Real Numbers</a></li><li><a href="#when-refinancing-makes-sense">When Refinancing Makes Sense</a></li><li><a href="#when-extra-payments-make-more-sense">When Extra Payments Make More Sense</a></li><li><a href="#tax-implications-to-consider">Tax Implications to Consider</a></li><li><a href="#pros-and-cons-at-a-glance">Pros and Cons at a Glance</a></li><li><a href="#the-hybrid-strategy-refinance-then-make-extra-payments">The Hybrid Strategy: Refinance Then Make Extra Payments</a></li><li><a href="#decision-framework-which-should-you-choose">Decision Framework: Which Should You Choose?</a></li><li><a href="#run-the-numbers-for-your-mortgage">Run the Numbers for Your Mortgage</a></li>
+  </ol>
+</nav>
+
+          <p>In this guide, we will break down both strategies with real numbers on a $300,000 mortgage, walk through the break-even calculation for refinancing, compare the long-term savings side by side, explore tax implications, and show you how a hybrid approach can maximize your results. By the end, you will know exactly which strategy&mdash;or combination of strategies&mdash;makes sense for your mortgage.</p>
+
+          <h2 id="how-refinancing-works">How Refinancing Works</h2>
+
+          <p>Refinancing means replacing your current mortgage with a brand-new loan, typically at a lower interest rate. When you refinance, your existing loan is paid off and a new loan is created with new terms. You can change your interest rate, your loan term, or both.</p>
+
+          <p>The primary goal of a rate-and-term refinance is to reduce the interest rate you pay, which lowers your monthly payment, reduces total interest over the life of the loan, or both. However, refinancing is not free. It comes with closing costs that typically range from <strong>2% to 5% of the loan amount</strong>, or roughly $6,000 to $15,000 on a $300,000 mortgage.</p>
+
+          <h3>Common closing costs include:</h3>
+
+          <ul>
+            <li><strong>Origination fee:</strong> 0.5% to 1% of the loan amount</li>
+            <li><strong>Appraisal fee:</strong> $300 to $600</li>
+            <li><strong>Title insurance and search:</strong> $500 to $1,500</li>
+            <li><strong>Recording fees:</strong> $50 to $250</li>
+            <li><strong>Credit report fee:</strong> $25 to $50</li>
+            <li><strong>Prepaid interest, taxes, and insurance escrow adjustments</strong></li>
+          </ul>
+
+          <p>These costs must be factored into any refinancing decision. If you do not stay in the home long enough to recoup these costs through monthly savings, refinancing can actually cost you money.</p>
+
+          <h2 id="the-break-even-calculation">The Break-Even Calculation</h2>
+
+          <p>The break-even point is the most important number in any refinancing decision. It tells you how many months you need to keep the new mortgage before the monthly savings exceed the closing costs you paid.</p>
+
+          <div class="callout">
+            <strong>Break-even formula:</strong> Break-Even (months) = Total Closing Costs / Monthly Payment Savings. For example, if closing costs are $8,000 and you save $200/month, your break-even point is 40 months (about 3.3 years). If you plan to stay in the home longer than that, refinancing makes financial sense.
+          </div>
+
+          <p>Let us calculate this for a real scenario. Suppose you have a <strong>$300,000 mortgage at 7.0% with 27 years remaining</strong>. Your current monthly payment is approximately $1,996. You are offered a refinance at <strong>5.75%</strong> with $8,500 in closing costs and a new 30-year term.</p>
+
+          <p>The new monthly payment on $300,000 at 5.75% over 30 years would be approximately <strong>$1,751</strong>. That is a monthly savings of <strong>$245</strong>.</p>
+
+          <p>Break-even = $8,500 / $245 = <strong>34.7 months (about 2 years and 11 months)</strong>.</p>
+
+          <p>If you plan to stay in the home for at least 3 years, this refinance makes sense from a pure payment perspective. But there is more to consider, including the fact that you are resetting the clock on a 30-year term.</p>
+
+          <h2 id="how-extra-payments-work">How Extra Payments Work</h2>
+
+          <p>Making extra payments is simpler and has zero transaction costs. You simply pay more than the minimum required each month (or make additional lump-sum payments), and the extra amount goes directly toward reducing your principal balance.</p>
+
+          <p>Because mortgage interest is calculated on the outstanding balance, every dollar of extra principal you pay reduces the interest that accrues in every subsequent period. This creates a compounding effect: early extra payments save the most because they prevent interest from accumulating across the entire remaining life of the loan.</p>
+
+          <h3>The 1% Rule</h3>
+
+          <p>A popular guideline is the <strong>1% rule</strong>: adding just 1% of your original loan amount as an extra monthly payment can dramatically accelerate your payoff. On a $300,000 mortgage, that means adding <strong>$250 per month</strong> to your regular payment.</p>
+
+          <p>This simple habit can cut 5 to 7 years off a 30-year mortgage and save you $50,000 to $80,000 in interest, depending on your rate. No closing costs, no paperwork, no credit checks. You can start and stop at any time based on your financial situation.</p>
+
+          <!-- Ad Slot 1 -->
+          <div class="ad-slot">
+            <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-8767713037568144"
+              data-ad-slot="1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+
+          <h2 id="comparing-scenarios-with-real-numbers">Comparing Scenarios with Real Numbers</h2>
+
+          <p>Let us compare both strategies head to head using a <strong>$300,000, 30-year fixed mortgage</strong>. We will examine three rate environments to show how the math changes.</p>
+
+          <h3>Scenario 1: Current Rate 7.0%, Refinance to 5.75%</h3>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Refinance to 5.75%</th>
+                <th>Extra $250/month at 7.0%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Monthly payment</td><td>$1,751</td><td>$1,996 + $250 = $2,246</td></tr>
+              <tr><td>Closing costs</td><td>$8,500</td><td>$0</td></tr>
+              <tr><td>Payoff time</td><td>30 years (new term)</td><td>22 years, 6 months</td></tr>
+              <tr><td>Total interest paid</td><td>$330,360</td><td>$302,140</td></tr>
+              <tr><td>Total cost (interest + closing)</td><td>$338,860</td><td>$302,140</td></tr>
+              <tr><td>Net savings vs original</td><td>$79,773</td><td>$116,493</td></tr>
+            </tbody>
+          </table>
+
+          <p>In this scenario, <strong>extra payments win decisively</strong>. Even though refinancing lowers the rate by 1.25%, resetting to a new 30-year term and paying closing costs undermines the savings. Meanwhile, extra payments aggressively attack the principal and pay off the loan 7.5 years early.</p>
+
+          <h3>Scenario 2: Current Rate 7.0%, Refinance to 5.75% (Same Remaining Term)</h3>
+
+          <p>What if you refinance but keep paying the same amount as your old payment ($1,996) instead of the new minimum ($1,751)? The extra $245 per month goes to principal.</p>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Refi + Pay Old Amount</th>
+                <th>Extra $250/month at 7.0%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Monthly out-of-pocket</td><td>$1,996</td><td>$2,246</td></tr>
+              <tr><td>Closing costs</td><td>$8,500</td><td>$0</td></tr>
+              <tr><td>Payoff time</td><td>23 years, 2 months</td><td>22 years, 6 months</td></tr>
+              <tr><td>Total interest paid</td><td>$237,480</td><td>$302,140</td></tr>
+              <tr><td>Total cost (interest + closing)</td><td>$245,980</td><td>$302,140</td></tr>
+              <tr><td>Net savings vs original</td><td>$172,653</td><td>$116,493</td></tr>
+            </tbody>
+          </table>
+
+          <p>Now the picture changes dramatically. By refinancing <em>and</em> continuing to pay the old monthly amount, you get the benefit of a lower rate <em>plus</em> built-in extra payments. This hybrid approach saves over $172,000 versus the original mortgage&mdash;nearly $56,000 more than extra payments alone.</p>
+
+          <h3>Scenario 3: Current Rate 6.5%, Refinance to 5.75%</h3>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Refi to 5.75% (new 30yr)</th>
+                <th>Extra $250/month at 6.5%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Monthly payment</td><td>$1,751</td><td>$1,896 + $250 = $2,146</td></tr>
+              <tr><td>Closing costs</td><td>$8,500</td><td>$0</td></tr>
+              <tr><td>Payoff time</td><td>30 years (new term)</td><td>22 years, 10 months</td></tr>
+              <tr><td>Total interest paid</td><td>$330,360</td><td>$268,430</td></tr>
+              <tr><td>Total cost (interest + closing)</td><td>$338,860</td><td>$268,430</td></tr>
+              <tr><td>Net savings vs original</td><td>$43,773</td><td>$114,203</td></tr>
+            </tbody>
+          </table>
+
+          <p>With only a 0.75% rate difference, refinancing to a new 30-year term barely saves anything compared to extra payments. The closing costs and extended term eat most of the rate reduction. Extra payments are the clear winner here.</p>
+
+          <div class="callout">
+            <strong>Key takeaway:</strong> Refinancing shines when the rate drop is large (1.5%+) and you continue making your old payment amount after refinancing. For smaller rate differences, extra payments are almost always better because they carry zero costs and reduce your term immediately.
+          </div>
+
+          <h2 id="when-refinancing-makes-sense">When Refinancing Makes Sense</h2>
+
+          <p>Refinancing is generally worth considering when the following conditions are met:</p>
+
+          <ul>
+            <li><strong>The rate difference is at least 1% to 1.5%:</strong> A larger rate drop means faster break-even and more total savings.</li>
+            <li><strong>You plan to stay in the home past the break-even point:</strong> If you might move within a few years, the closing costs may not be recovered.</li>
+            <li><strong>Your credit score has improved significantly:</strong> A higher credit score qualifies you for better rates than when you originally took out the loan.</li>
+            <li><strong>Your home has appreciated:</strong> More equity means better loan-to-value ratios, which can qualify you for lower rates and eliminate PMI.</li>
+            <li><strong>You want to shorten your loan term:</strong> Refinancing from a 30-year to a 15-year mortgage often comes with a lower rate and builds equity much faster.</li>
+            <li><strong>You need to lower your monthly payment:</strong> If cash flow is tight, refinancing to a lower rate reduces your minimum required payment, providing financial breathing room.</li>
+          </ul>
+
+          <h2 id="when-extra-payments-make-more-sense">When Extra Payments Make More Sense</h2>
+
+          <p>Extra payments are the better choice in these situations:</p>
+
+          <ul>
+            <li><strong>The rate difference is small (under 1%):</strong> Closing costs will eat up most of the savings from a small rate reduction.</li>
+            <li><strong>You may move within a few years:</strong> Extra payments provide immediate equity with no sunk costs.</li>
+            <li><strong>You want flexibility:</strong> Extra payments can be increased, decreased, or paused at any time with no penalty. Refinancing locks you into new terms.</li>
+            <li><strong>You do not want to reset your loan term:</strong> If you have already paid several years on your mortgage, refinancing to a new 30-year term feels like moving backward.</li>
+            <li><strong>Your mortgage balance is relatively small:</strong> On smaller balances, closing costs represent a larger percentage of the loan, making refinancing less efficient.</li>
+            <li><strong>You value simplicity:</strong> No applications, no appraisals, no underwriting. You just send extra money with your payment.</li>
+          </ul>
+
+          <h2 id="tax-implications-to-consider">Tax Implications to Consider</h2>
+
+          <p>Both strategies have tax considerations that can affect your decision:</p>
+
+          <h3>Mortgage Interest Deduction</h3>
+
+          <p>If you itemize deductions, mortgage interest is tax-deductible on the first $750,000 of mortgage debt (for loans originated after December 15, 2017). Both refinancing and extra payments reduce the interest you pay over time, which means your deduction decreases as well. However, you should never avoid saving on interest just to preserve a tax deduction&mdash;the deduction is worth less than the interest you are paying.</p>
+
+          <h3>Refinancing Points</h3>
+
+          <p>If you pay discount points when refinancing (each point equals 1% of the loan amount and typically reduces the rate by about 0.25%), those points are tax-deductible. However, unlike points on a purchase mortgage, refinancing points must be amortized over the life of the loan rather than deducted in the year they are paid.</p>
+
+          <h3>Standard Deduction Consideration</h3>
+
+          <p>With the standard deduction at $15,000 for single filers and $30,000 for married filing jointly in 2026, many homeowners no longer itemize. If you take the standard deduction, the mortgage interest deduction is irrelevant to your decision. Focus purely on the total cost comparison between the two strategies.</p>
+
+          <!-- Ad Slot 2 -->
+          <div class="ad-slot">
+            <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-8767713037568144"
+              data-ad-slot="2"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+
+          <h2 id="pros-and-cons-at-a-glance">Pros and Cons at a Glance</h2>
+
+          <h3>Refinancing: Pros</h3>
+
+          <ul>
+            <li>Can significantly lower your monthly payment and total interest</li>
+            <li>Locks in a new, lower rate for the remaining life of the loan</li>
+            <li>Opportunity to change loan term (e.g., 30-year to 15-year)</li>
+            <li>Can eliminate PMI if you have gained sufficient equity</li>
+            <li>Monthly savings happen automatically with no ongoing effort</li>
+          </ul>
+
+          <h3>Refinancing: Cons</h3>
+
+          <ul>
+            <li>Upfront closing costs of $6,000 to $15,000</li>
+            <li>Resets the amortization clock if you extend the term</li>
+            <li>Requires credit check, appraisal, and underwriting process</li>
+            <li>Takes 30 to 60 days to close</li>
+            <li>Not beneficial if you plan to move soon</li>
+            <li>Points and fees can be confusing to evaluate</li>
+          </ul>
+
+          <h3>Extra Payments: Pros</h3>
+
+          <ul>
+            <li>Zero cost to implement&mdash;no fees, no closing costs</li>
+            <li>Complete flexibility to start, stop, or adjust anytime</li>
+            <li>Immediate impact on principal and interest savings</li>
+            <li>No credit check or application process</li>
+            <li>Builds equity faster without resetting the loan term</li>
+            <li>Works regardless of current interest rate environment</li>
+          </ul>
+
+          <h3>Extra Payments: Cons</h3>
+
+          <ul>
+            <li>Requires ongoing financial discipline</li>
+            <li>Tied-up capital is illiquid (you cannot easily access equity without selling or taking a HELOC)</li>
+            <li>Does not change the interest rate on existing debt</li>
+            <li>Opportunity cost if investment returns exceed your mortgage rate</li>
+            <li>Some lenders may apply extra payments to future payments rather than principal (you must specify)</li>
+          </ul>
+
+          <h2 id="the-hybrid-strategy-refinance-then-make-extra-payments">The Hybrid Strategy: Refinance Then Make Extra Payments</h2>
+
+          <p>As our Scenario 2 demonstrated, the most powerful approach is often a <strong>hybrid strategy</strong>: refinance to a lower rate, then continue making payments at or above your old payment amount. This gives you the benefit of a lower interest rate <em>and</em> the accelerated payoff of extra payments.</p>
+
+          <p>Here is how to execute this strategy:</p>
+
+          <ol>
+            <li><strong>Refinance when the rate drop justifies the closing costs.</strong> Use the break-even formula to ensure you will stay in the home long enough.</li>
+            <li><strong>Keep paying your old monthly payment amount.</strong> The difference between your old and new payment automatically becomes an extra principal payment each month.</li>
+            <li><strong>Consider adding even more.</strong> If your budget allows, add additional principal payments on top of your old payment amount for maximum acceleration.</li>
+            <li><strong>Monitor your amortization schedule.</strong> Use a payoff calculator to track your progress and see how much time and interest you are saving.</li>
+          </ol>
+
+          <p>Using our example: refinancing from 7.0% to 5.75% and continuing to pay $1,996 (the old payment) instead of the new minimum of $1,751 saves over <strong>$172,000 in interest</strong> and pays off the mortgage in about 23 years instead of 30. If you added another $250 per month on top of that, the payoff drops to roughly <strong>19 years</strong> with even greater savings.</p>
+
+          <h2 id="decision-framework-which-should-you-choose">Decision Framework: Which Should You Choose?</h2>
+
+          <p>To simplify the decision, ask yourself these questions:</p>
+
+          <ol>
+            <li><strong>Is the available refinance rate at least 1% lower than your current rate?</strong> If yes, refinancing is worth investigating. If the drop is less than 0.75%, extra payments are likely better.</li>
+            <li><strong>How long will you stay in the home?</strong> Calculate the break-even point. If you will move before reaching it, skip refinancing and make extra payments instead.</li>
+            <li><strong>Do you have the cash for closing costs?</strong> If paying closing costs would deplete your emergency fund or prevent you from making extra payments, it may be better to focus on extra payments alone.</li>
+            <li><strong>Do you have the discipline for ongoing extra payments?</strong> If you are likely to spend the "savings" from a lower payment, refinancing at least locks in some benefit automatically. Extra payments require consistent follow-through.</li>
+            <li><strong>What is your overall financial picture?</strong> If you carry high-interest debt (credit cards, personal loans), pay that off before either strategy. The guaranteed return from eliminating 20%+ interest debt far exceeds mortgage savings.</li>
+          </ol>
+
+          <h2 id="run-the-numbers-for-your-mortgage">Run the Numbers for Your Mortgage</h2>
+
+          <p>Every mortgage is unique. The right strategy depends on your specific balance, rate, remaining term, local closing costs, and how long you plan to stay in the home. Our <a href="/">free mortgage payoff calculator</a> lets you model both extra payments and different rate scenarios to see exactly how each approach affects your payoff timeline and total interest.</p>
+
+          <p>Enter your current loan details, then experiment with extra monthly payments to see the impact. Compare that to the savings from a potential refinance at today's rates. The calculator shows you a month-by-month amortization schedule so you can see precisely where your money goes under each scenario.</p>
+
+          <!-- CTA -->
+        <div class="author-box" itemscope itemtype="https://schema.org/Person" style="display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;">
+          <div style="width:56px;height:56px;border-radius:50%;background:#ccfbf1;color:#0f766e;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;flex-shrink:0;">DP</div>
+          <div>
+            <span itemprop="name" style="font-weight:700;font-size:0.95rem;display:block;">Daniel Park</span>
+            <span itemprop="jobTitle" style="color:#64748b;font-size:0.82rem;display:block;margin-bottom:8px;">Mortgage &amp; Housing Finance Analyst</span>
+            <p itemprop="description" style="font-size:0.88rem;color:#64748b;margin:0;line-height:1.5;">Daniel Park covers mortgage strategies and housing finance. He studied Economics at UC Berkeley and spent five years in mortgage lending before moving into financial education. He specializes in early payoff strategies and refinancing analysis.</p>
+          </div>
+        </div>
+
+          <div class="cta-card">
+            <h3>Compare Your Mortgage Strategies</h3>
+            <p>Enter your loan details to compare refinancing vs extra payments and find the best path to a mortgage-free home.</p>
+            <a href="/" class="btn">Open Calculator</a>
+          </div>
+
+        </div>
+      
+<div class="sources-section" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:1.5rem;margin:2.5rem 0 1rem;">
+  <h3 style="font-size:1rem;font-weight:700;margin-bottom:0.75rem;">Sources &amp; References</h3>
+  <ul style="margin:0;padding-left:1.25rem;font-size:0.88rem;line-height:1.8;color:var(--muted,#64748b);">
+    <li><a href="https://www.consumerfinance.gov/owning-a-home/" target="_blank" rel="noopener noreferrer">Consumer Financial Protection Bureau — Mortgages</a></li><li><a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener noreferrer">Freddie Mac — Primary Mortgage Market Survey</a></li><li><a href="https://www.nar.realtor/research-and-statistics" target="_blank" rel="noopener noreferrer">National Association of Realtors — Housing Data</a></li>
+  </ul>
+</div>
+</div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p>&copy; 2026 PayoffMortgage.org. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <div class="cookie-bar" id="cookie-consent" style="position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#e2e8f0;padding:14px 20px;font-size:0.85rem;display:flex;align-items:center;justify-content:center;gap:16px;z-index:9999;flex-wrap:wrap;">
+    <span>We use cookies for analytics and advertising. By continuing, you agree to our <a href="/privacy-policy" style="color:#0f766e;text-decoration:underline;">Privacy Policy</a>.</span>
+    <button onclick="document.getElementById('cookie-consent').style.display='none';document.cookie='cc=1;path=/;max-age=31536000'" style="background:#0f766e;color:#fff;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-weight:600;font-size:0.82rem;white-space:nowrap;">Got it</button>
+  </div>
+  <script>if(document.cookie.indexOf('cc=1')!==-1)document.getElementById('cookie-consent').style.display='none';</script>
+</body>
+</html>

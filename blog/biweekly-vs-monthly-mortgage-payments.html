@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biweekly vs Monthly Mortgage Payments: Which Saves You More? | PayoffMortgage.org</title>
+  <meta name="description" content="Compare biweekly vs monthly mortgage payments with real examples. Learn how switching to biweekly payments can save you tens of thousands in interest and pay off your home years early.">
+  <link rel="canonical" href="https://payoffmortgage.org/blog/biweekly-vs-monthly-mortgage-payments">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Biweekly vs Monthly Mortgage Payments: Which Saves You More?">
+  <meta property="og:description" content="Compare biweekly vs monthly mortgage payments with real examples. Learn how switching to biweekly payments can save you tens of thousands in interest.">
+  <meta property="og:url" content="https://payoffmortgage.org/blog/biweekly-vs-monthly-mortgage-payments">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PayoffMortgage.org">
+  <meta property="article:published_time" content="2026-02-11">
+  <meta property="article:modified_time" content="2026-02-16">
+  <meta property="article:author" content="Daniel Park">
+  <meta property="article:section" content="Mortgage Strategies">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f8fafc;
+      --surface: #fff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #0f766e;
+      --accent-light: #ccfbf1;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    nav a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-left: 24px;
+    }
+    nav a:hover { color: var(--accent); text-decoration: none; }
+
+    /* Article */
+    .article-header {
+      padding: 56px 0 32px;
+    }
+    .article-header .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+    .article-header h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .article-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .article-body {
+      padding-bottom: 48px;
+    }
+    .article-body h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 40px 0 16px;
+      padding-top: 8px;
+    }
+    .article-body h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+    }
+    .article-body p {
+      margin-bottom: 16px;
+    }
+    .article-body ul, .article-body ol {
+      margin: 0 0 16px 24px;
+    }
+    .article-body li {
+      margin-bottom: 6px;
+    }
+    .article-body strong {
+      font-weight: 600;
+    }
+
+    .callout {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 0.95rem;
+    }
+    .callout strong { color: var(--accent); }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 0.92rem;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .comparison-table th {
+      background: var(--bg);
+      font-weight: 600;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--muted);
+    }
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .comparison-table td:last-child { font-weight: 600; color: var(--accent); }
+
+    /* Ad slot */
+    .ad-slot {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin: 32px auto;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* CTA */
+    .cta-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+      margin: 40px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .cta-card h3 { margin-bottom: 8px; font-size: 1.15rem; }
+    .cta-card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 16px; }
+    .cta-card a.btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.15s;
+    }
+    .cta-card a.btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
+    .footer-links { margin-bottom: 8px; }
+    .footer-links a { margin: 0 12px; }
+
+    @media (max-width: 640px) {
+      .article-header { padding: 36px 0 24px; }
+      .article-header h1 { font-size: 1.6rem; }
+      .comparison-table { font-size: 0.84rem; }
+      .comparison-table th, .comparison-table td { padding: 10px 12px; }
+    }
+  </style>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8767713037568144"
+    crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PayoffMortgage.org",
+    "url": "https://payoffmortgage.org/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://payoffmortgage.org/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://payoffmortgage.org/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "Biweekly vs Monthly Mortgage Payments: Which Saves You More?"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="/" class="logo">PayoffMortgage.org</a>
+      <nav>
+        <a href="/">Calculator</a>
+        <a href="/blog/mortgage-payment-strategies-complete-guide-2026">Blog</a>
+        <a href="/about">About</a>
+      </nav>
+    </div>
+  </header>
+  <div style="max-width:720px;margin:0 auto;padding:0 20px;">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="padding:12px 0;font-size:0.82rem;color:#64748b;">
+      <a href="/" style="color:#64748b;">Home</a><span style="margin:0 6px;">/</span>
+      <a href="/blog/" style="color:#64748b;">Blog</a><span style="margin:0 6px;">/</span>
+      <span>Biweekly vs Monthly Mortgage Payments: Which Saves You More?</span>
+    </nav>
+  </div>
+
+  <main>
+    <article>
+      <div class="container">
+        <div class="article-header">
+          <span class="tag">Strategy</span>
+          <h1>Biweekly vs Monthly Mortgage Payments: Which Saves You More?</h1>
+          <p class="article-meta">By <strong>Daniel Park</strong>, Mortgage &amp; Housing Finance Analyst &middot; Updated 2026-02-16</p>
+        </div>
+
+        <div class="article-body">
+
+          <p>If you have a mortgage, chances are you make one payment per month, twelve times a year. It is the default, and most homeowners never think twice about it. But there is an alternative payment schedule that has quietly helped millions of homeowners save tens of thousands of dollars and pay off their homes years ahead of schedule: <strong>biweekly mortgage payments</strong>.</p>
+
+<nav class="toc" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0 2rem;">
+  <p style="font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted,#64748b);margin-bottom:0.75rem;">In This Article</p>
+  <ol style="margin:0;padding-left:1.25rem;font-size:0.93rem;line-height:1.9;">
+    <li><a href="#how-monthly-mortgage-payments-work">How Monthly Mortgage Payments Work</a></li><li><a href="#how-biweekly-mortgage-payments-work">How Biweekly Mortgage Payments Work</a></li><li><a href="#side-by-side-comparison-real-numbers">Side-by-Side Comparison: Real Numbers</a></li><li><a href="#why-biweekly-payments-are-so-effective">Why Biweekly Payments Are So Effective</a></li><li><a href="#pros-of-biweekly-payments">Pros of Biweekly Payments</a></li><li><a href="#cons-of-biweekly-payments">Cons of Biweekly Payments</a></li><li><a href="#pros-of-sticking-with-monthly-payments">Pros of Sticking with Monthly Payments</a></li><li><a href="#cons-of-monthly-payments">Cons of Monthly Payments</a></li><li><a href="#the-diy-alternative-make-one-extra-payment-per-year">The DIY Alternative: Make One Extra Payment Per Year</a></li><li><a href="#how-to-set-up-biweekly-payments">How to Set Up Biweekly Payments</a></li><li><a href="#which-strategy-is-right-for-you">Which Strategy Is Right for You?</a></li><li><a href="#use-the-calculator-to-see-your-savings">Use the Calculator to See Your Savings</a></li>
+  </ol>
+</nav>
+
+          <p>In this guide, we will break down exactly how biweekly payments work, compare them side by side with traditional monthly payments using real calculator examples, explore the pros and cons of each approach, and help you decide which strategy makes sense for your situation.</p>
+
+          <h2 id="how-monthly-mortgage-payments-work">How Monthly Mortgage Payments Work</h2>
+
+          <p>With a standard monthly payment schedule, you make 12 payments per year. Each payment is divided by your lender into two parts: a portion that covers the interest owed for that month and a portion that goes toward reducing your principal balance. In the early years of a mortgage, the vast majority of each payment goes toward interest. As you pay down the balance over time, the interest portion shrinks and more of each payment goes toward principal.</p>
+
+          <p>For example, on a <strong>$300,000 mortgage at 6.5% over 30 years</strong>, the monthly payment is approximately <strong>$1,896</strong>. In the first month, about $1,625 of that payment goes to interest and only $271 goes to principal. By year 15, the split is roughly even. By year 25, most of the payment finally goes toward principal.</p>
+
+          <p>This front-loading of interest is why extra payments early in the loan have such a disproportionate impact&mdash;and it is also why biweekly payments are so effective.</p>
+
+          <h2 id="how-biweekly-mortgage-payments-work">How Biweekly Mortgage Payments Work</h2>
+
+          <p>With biweekly payments, instead of making one full payment each month, you make half of your monthly payment every two weeks. At first glance, this might seem like the same thing. Half a payment times two is a full payment, right?</p>
+
+          <p>Not quite. Here is the key: there are 52 weeks in a year, which means 26 biweekly payments. That is the equivalent of <strong>13 monthly payments per year instead of 12</strong>. You are making one extra full payment every year, and that extra payment goes entirely toward reducing your principal.</p>
+
+          <p>Using our $300,000 mortgage example at 6.5%, the biweekly payment would be $948 (half of $1,896) paid every two weeks. Over the course of a year, you pay $24,648 total instead of $22,752&mdash;an extra $1,896 that goes straight to principal.</p>
+
+          <div class="callout">
+            <strong>The math is simple:</strong> 12 monthly payments = $22,752/year. 26 biweekly half-payments = $24,648/year. The difference is exactly one extra monthly payment ($1,896) applied directly to your principal every year.
+          </div>
+
+          <!-- Ad Slot 1 -->
+          <div class="ad-slot">
+            <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-8767713037568144"
+              data-ad-slot="1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+
+          <h2 id="side-by-side-comparison-real-numbers">Side-by-Side Comparison: Real Numbers</h2>
+
+          <p>Let us look at three common mortgage scenarios and compare monthly vs biweekly payments. All examples assume a 30-year fixed-rate mortgage at 6.5%.</p>
+
+          <h3>Scenario 1: $250,000 Mortgage</h3>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Monthly Payments</th>
+                <th>Biweekly Payments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Payment amount</td><td>$1,580/month</td><td>$790 every 2 weeks</td></tr>
+              <tr><td>Total paid per year</td><td>$18,960</td><td>$20,540</td></tr>
+              <tr><td>Payoff time</td><td>30 years</td><td>25 years, 4 months</td></tr>
+              <tr><td>Total interest paid</td><td>$318,861</td><td>$255,400</td></tr>
+              <tr><td>Interest saved</td><td>&mdash;</td><td>$63,461</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Scenario 2: $300,000 Mortgage</h3>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Monthly Payments</th>
+                <th>Biweekly Payments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Payment amount</td><td>$1,896/month</td><td>$948 every 2 weeks</td></tr>
+              <tr><td>Total paid per year</td><td>$22,752</td><td>$24,648</td></tr>
+              <tr><td>Payoff time</td><td>30 years</td><td>25 years, 4 months</td></tr>
+              <tr><td>Total interest paid</td><td>$382,633</td><td>$306,480</td></tr>
+              <tr><td>Interest saved</td><td>&mdash;</td><td>$76,153</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Scenario 3: $400,000 Mortgage</h3>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Monthly Payments</th>
+                <th>Biweekly Payments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Payment amount</td><td>$2,528/month</td><td>$1,264 every 2 weeks</td></tr>
+              <tr><td>Total paid per year</td><td>$30,336</td><td>$32,864</td></tr>
+              <tr><td>Payoff time</td><td>30 years</td><td>25 years, 4 months</td></tr>
+              <tr><td>Total interest paid</td><td>$510,177</td><td>$408,640</td></tr>
+              <tr><td>Interest saved</td><td>&mdash;</td><td>$101,537</td></tr>
+            </tbody>
+          </table>
+
+          <p>The pattern is consistent across all loan sizes: biweekly payments shave roughly <strong>4.5 to 5 years</strong> off a 30-year mortgage and save approximately <strong>20% of total interest costs</strong>. On larger loans, the dollar savings are even more substantial.</p>
+
+          <h2 id="why-biweekly-payments-are-so-effective">Why Biweekly Payments Are So Effective</h2>
+
+          <p>The power of biweekly payments comes from two compounding factors:</p>
+
+          <h3>1. One Extra Payment Per Year</h3>
+          <p>As we have shown, 26 biweekly payments equal 13 monthly payments. That extra payment, applied to principal, reduces the balance faster. Because the balance is lower, less interest accrues each subsequent period. This creates a positive feedback loop where each extra dollar saves you progressively more over the life of the loan.</p>
+
+          <h3>2. More Frequent Principal Reduction</h3>
+          <p>With monthly payments, interest accrues on your full balance for 30 days between payments. With biweekly payments, you are reducing the principal every 14 days instead of every 30. This means interest has less time to accumulate between payments, resulting in slightly less total interest even beyond the impact of the extra annual payment.</p>
+
+          <p>The combination of these two effects is why biweekly payments produce such impressive savings with relatively little additional cost per paycheck.</p>
+
+          <h2 id="pros-of-biweekly-payments">Pros of Biweekly Payments</h2>
+
+          <ul>
+            <li><strong>Significant interest savings:</strong> Save $60,000 to $100,000+ depending on your loan size, with no changes to your lifestyle.</li>
+            <li><strong>Pay off your mortgage years early:</strong> Typically shaves 4 to 5 years off a 30-year mortgage.</li>
+            <li><strong>Aligns with pay schedules:</strong> If you get paid every two weeks (as most salaried employees do), biweekly mortgage payments align naturally with your income cycle.</li>
+            <li><strong>Easier to budget per paycheck:</strong> Half a mortgage payment per paycheck feels more manageable than one large payment per month.</li>
+            <li><strong>Build equity faster:</strong> More principal paid early means you own more of your home sooner, which provides financial flexibility if you need to sell or refinance.</li>
+            <li><strong>Low effort, high reward:</strong> Once set up, it runs automatically. No discipline required to "remember" to make extra payments.</li>
+          </ul>
+
+          <!-- Ad Slot 2 -->
+          <div class="ad-slot">
+            <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-8767713037568144"
+              data-ad-slot="2"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+
+          <h2 id="cons-of-biweekly-payments">Cons of Biweekly Payments</h2>
+
+          <ul>
+            <li><strong>Not all lenders support it:</strong> Some mortgage servicers do not offer a true biweekly payment option. They may hold your biweekly payments in an account and only apply them monthly, negating much of the benefit.</li>
+            <li><strong>Third-party services charge fees:</strong> Some companies offer to manage biweekly payments on your behalf but charge setup fees or monthly fees that eat into your savings.</li>
+            <li><strong>Two months per year have three payment dates:</strong> Since you pay every two weeks, two months each year will require three biweekly payments instead of two. This can strain your budget if you are not prepared for it.</li>
+            <li><strong>Slightly higher annual cost:</strong> You are paying the equivalent of one extra monthly payment per year. On a $300,000 mortgage, that is roughly $1,900 more per year.</li>
+            <li><strong>Opportunity cost:</strong> That extra $1,900 per year could potentially earn higher returns if invested elsewhere, particularly if your mortgage rate is relatively low.</li>
+          </ul>
+
+          <h2 id="pros-of-sticking-with-monthly-payments">Pros of Sticking with Monthly Payments</h2>
+
+          <ul>
+            <li><strong>Simplicity:</strong> One payment, one date, every month. Easy to track and budget for.</li>
+            <li><strong>Universal acceptance:</strong> Every lender supports monthly payments. No special arrangements needed.</li>
+            <li><strong>Maximum cash flow flexibility:</strong> Lower annual total means more money available for other investments, emergency savings, or expenses.</li>
+            <li><strong>Investment potential:</strong> If your mortgage rate is below expected investment returns, keeping the extra money invested could yield higher net worth over time.</li>
+          </ul>
+
+          <h2 id="cons-of-monthly-payments">Cons of Monthly Payments</h2>
+
+          <ul>
+            <li><strong>Higher total interest:</strong> You will pay significantly more interest over the life of the loan compared to biweekly.</li>
+            <li><strong>Slower equity building:</strong> Your principal balance decreases more slowly, leaving you with less equity for longer.</li>
+            <li><strong>Full 30-year commitment:</strong> Without extra payments, you are locked into the full loan term.</li>
+          </ul>
+
+          <h2 id="the-diy-alternative-make-one-extra-payment-per-year">The DIY Alternative: Make One Extra Payment Per Year</h2>
+
+          <p>If your lender does not offer biweekly payments or charges fees for the service, you can achieve nearly identical results on your own. Simply make one extra monthly payment per year directed entirely toward principal. You can do this by:</p>
+
+          <ul>
+            <li><strong>Dividing your monthly payment by 12</strong> and adding that amount to each monthly payment. For a $1,896 payment, add $158 per month. Over 12 months, that equals one extra payment.</li>
+            <li><strong>Making a lump sum extra payment</strong> once per year, perhaps when you receive your tax refund or annual bonus.</li>
+            <li><strong>Paying half your monthly payment every two weeks</strong> into a separate savings account, then making your regular monthly payment plus one extra payment from the accumulated savings at the end of the year.</li>
+          </ul>
+
+          <p>Any of these approaches gets you roughly the same result as a formal biweekly payment program, without fees or lender coordination.</p>
+
+          <h2 id="how-to-set-up-biweekly-payments">How to Set Up Biweekly Payments</h2>
+
+          <p>If you decide biweekly payments are right for you, here is how to get started:</p>
+
+          <ol>
+            <li><strong>Contact your lender:</strong> Ask if they offer a biweekly payment program and whether there are any fees. A true biweekly program applies each half-payment immediately when received.</li>
+            <li><strong>Verify payment application:</strong> Confirm that each biweekly payment is applied to your loan when received, not held and applied monthly. If they batch payments, you lose the benefit of more frequent principal reduction.</li>
+            <li><strong>Set up autopay:</strong> Automate the biweekly payments so they align with your pay schedule. Most lenders allow you to set this up through online banking.</li>
+            <li><strong>Budget for three-payment months:</strong> Twice a year, you will have three biweekly payments in a single month. Plan your budget accordingly so these months do not cause a shortfall.</li>
+            <li><strong>Monitor your statements:</strong> After the first few months, review your mortgage statements to confirm the extra principal is being applied correctly and your balance is decreasing as expected.</li>
+          </ol>
+
+          <h2 id="which-strategy-is-right-for-you">Which Strategy Is Right for You?</h2>
+
+          <p>Choosing between biweekly and monthly payments depends on your personal financial situation:</p>
+
+          <p><strong>Biweekly payments make sense if:</strong> You are paid every two weeks, you have a stable income, you want a set-it-and-forget-it way to save on your mortgage, and you are not carrying high-interest debt that should be prioritized first.</p>
+
+          <p><strong>Monthly payments make sense if:</strong> You prefer simplicity, your budget is tight and the extra annual cost of biweekly payments would strain your finances, or you have higher-returning investment opportunities for the extra money.</p>
+
+          <p><strong>The best answer for most homeowners</strong> is that any form of extra payment&mdash;whether through a formal biweekly program, a DIY extra payment strategy, or occasional lump sums&mdash;is better than the standard monthly schedule. The key is to start. Even if you cannot commit to a full extra payment per year right now, adding $50 or $100 per month to your principal payment makes a meaningful difference over time.</p>
+
+          <div class="callout">
+            <strong>Quick rule of thumb:</strong> If your mortgage rate is above 5% and you have no high-interest debt, biweekly payments or extra principal payments are almost always a smart financial move. The guaranteed "return" of eliminating mortgage interest is hard to beat on a risk-adjusted basis.
+          </div>
+
+          <h2 id="use-the-calculator-to-see-your-savings">Use the Calculator to See Your Savings</h2>
+
+          <p>The best way to understand the impact for your specific mortgage is to run the numbers yourself. Our <a href="/">free mortgage payoff calculator</a> lets you enter your exact loan balance, interest rate, and remaining term. You can then model biweekly payments, extra monthly amounts, or lump sums to see precisely how many years you will shave off your mortgage and how much interest you will save.</p>
+
+          <p>Every mortgage is different. The calculator takes the guesswork out of the equation and shows you a month-by-month amortization schedule so you can see exactly where your money goes under each scenario.</p>
+
+          <!-- CTA -->
+        <div class="author-box" itemscope itemtype="https://schema.org/Person" style="display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:40px 0;">
+          <div style="width:56px;height:56px;border-radius:50%;background:#ccfbf1;color:#0f766e;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;flex-shrink:0;">DP</div>
+          <div>
+            <span itemprop="name" style="font-weight:700;font-size:0.95rem;display:block;">Daniel Park</span>
+            <span itemprop="jobTitle" style="color:#64748b;font-size:0.82rem;display:block;margin-bottom:8px;">Mortgage &amp; Housing Finance Analyst</span>
+            <p itemprop="description" style="font-size:0.88rem;color:#64748b;margin:0;line-height:1.5;">Daniel Park covers mortgage strategies and housing finance. He studied Economics at UC Berkeley and spent five years in mortgage lending before moving into financial education. He specializes in early payoff strategies and refinancing analysis.</p>
+          </div>
+        </div>
+
+          <div class="cta-card">
+            <h3>See How Much You Can Save</h3>
+            <p>Enter your loan details into our free calculator and compare biweekly vs monthly payment schedules.</p>
+            <a href="/" class="btn">Open Calculator</a>
+          </div>
+
+          <!-- Ad Slot 3 -->
+          <div class="ad-slot">
+            <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-8767713037568144"
+              data-ad-slot="3"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+
+        </div>
+      
+<div class="sources-section" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:1.5rem;margin:2.5rem 0 1rem;">
+  <h3 style="font-size:1rem;font-weight:700;margin-bottom:0.75rem;">Sources &amp; References</h3>
+  <ul style="margin:0;padding-left:1.25rem;font-size:0.88rem;line-height:1.8;color:var(--muted,#64748b);">
+    <li><a href="https://www.consumerfinance.gov/owning-a-home/" target="_blank" rel="noopener noreferrer">Consumer Financial Protection Bureau — Mortgages</a></li><li><a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener noreferrer">Freddie Mac — Primary Mortgage Market Survey</a></li><li><a href="https://www.nar.realtor/research-and-statistics" target="_blank" rel="noopener noreferrer">National Association of Realtors — Housing Data</a></li>
+  </ul>
+</div>
+</div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p>&copy; 2026 PayoffMortgage.org. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <div class="cookie-bar" id="cookie-consent" style="position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#e2e8f0;padding:14px 20px;font-size:0.85rem;display:flex;align-items:center;justify-content:center;gap:16px;z-index:9999;flex-wrap:wrap;">
+    <span>We use cookies for analytics and advertising. By continuing, you agree to our <a href="/privacy-policy" style="color:#0f766e;text-decoration:underline;">Privacy Policy</a>.</span>
+    <button onclick="document.getElementById('cookie-consent').style.display='none';document.cookie='cc=1;path=/;max-age=31536000'" style="background:#0f766e;color:#fff;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-weight:600;font-size:0.82rem;white-space:nowrap;">Got it</button>
+  </div>
+  <script>if(document.cookie.indexOf('cc=1')!==-1)document.getElementById('cookie-consent').style.display='none';</script>
+</body>
+</html>

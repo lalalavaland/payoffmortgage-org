@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | PayoffMortgage.org</title>
+  <meta name="description" content="About PayoffMortgage.org: A free mortgage payoff calculator helping homeowners save money by paying off their mortgage faster. Learn about our mission.">
+  <link rel="canonical" href="https://payoffmortgage.org/about">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="About Us | PayoffMortgage.org">
+  <meta property="og:description" content="About PayoffMortgage.org: A free mortgage payoff calculator helping homeowners save money.">
+  <meta property="og:url" content="https://payoffmortgage.org/about">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PayoffMortgage.org">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f8fafc;
+      --surface: #fff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #0f766e;
+      --accent-light: #ccfbf1;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    nav a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-left: 24px;
+    }
+    nav a:hover { color: var(--accent); text-decoration: none; }
+
+    /* Page content */
+    .page-header {
+      padding: 56px 0 32px;
+    }
+    .page-header h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .page-header p.subtitle {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .page-body {
+      padding-bottom: 48px;
+    }
+    .page-body h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 40px 0 16px;
+      padding-top: 8px;
+    }
+    .page-body h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+    }
+    .page-body p {
+      margin-bottom: 16px;
+    }
+    .page-body ul, .page-body ol {
+      margin: 0 0 16px 24px;
+    }
+    .page-body li {
+      margin-bottom: 6px;
+    }
+    .page-body strong {
+      font-weight: 600;
+    }
+
+    .callout {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 0.95rem;
+    }
+    .callout strong { color: var(--accent); }
+
+    /* CTA */
+    .cta-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+      margin: 40px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .cta-card h3 { margin-bottom: 8px; font-size: 1.15rem; }
+    .cta-card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 16px; }
+    .cta-card a.btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.15s;
+    }
+    .cta-card a.btn:hover { opacity: 0.9; text-decoration: none; }
+
+    /* Ad slot */
+    .ad-slot {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin: 32px auto;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
+    .footer-links { margin-bottom: 8px; }
+    .footer-links a { margin: 0 12px; }
+
+    @media (max-width: 640px) {
+      .page-header { padding: 36px 0 24px; }
+      .page-header h1 { font-size: 1.6rem; }
+    }
+  </style>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8767713037568144"
+    crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PayoffMortgage.org",
+    "url": "https://payoffmortgage.org/"
+  }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a href="/" class="logo">PayoffMortgage.org</a>
+      <nav>
+        <a href="/">Calculator</a>
+        <a href="/blog/mortgage-payment-strategies-complete-guide-2026">Blog</a>
+        <a href="/about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <h1>About PayoffMortgage.org</h1>
+        <p class="subtitle">Helping homeowners save money and pay off their mortgage faster.</p>
+      </div>
+
+      <div class="page-body">
+
+        <p>PayoffMortgage.org was created with a simple mission: to give every homeowner access to a <strong>free, easy-to-use mortgage payoff calculator</strong> that shows exactly how extra payments, biweekly schedules, and lump sums can save thousands of dollars in interest and shave years off a mortgage.</p>
+
+        <p>For most families, a mortgage is the single largest financial commitment they will ever make. On a typical 30-year loan, homeowners pay more in interest than the original price of their home. Yet many people do not realize how much power they have to change that equation. Even small, consistent extra payments can produce dramatic results over time.</p>
+
+        <h2>Our Mission</h2>
+
+        <p>We believe that financial tools should be free, transparent, and accessible to everyone. Our mission is to:</p>
+
+        <ul>
+          <li><strong>Empower homeowners</strong> with clear, accurate calculations that show the real impact of different payment strategies.</li>
+          <li><strong>Educate through content</strong> by publishing in-depth, jargon-free guides on mortgage payoff strategies, interest savings, and smart financial planning.</li>
+          <li><strong>Keep it free</strong> by supporting the site through advertising, so you never have to pay for the tools and information you need.</li>
+        </ul>
+
+        <div class="callout">
+          <strong>Our promise:</strong> No paywalls, no account requirements, no hidden fees. Enter your numbers, get your results, and start saving.
+        </div>
+
+        <!-- Ad Slot -->
+        <div class="ad-slot">
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-8767713037568144"
+            data-ad-slot="1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <h2>What We Offer</h2>
+
+        <h3>Mortgage Payoff Calculator</h3>
+        <p>Our core tool lets you enter your loan balance, interest rate, remaining term, and any extra payment amounts. It instantly calculates how much interest you will save, how many years you will cut from your mortgage, and generates a complete amortization schedule so you can see the impact month by month.</p>
+
+        <h3>Educational Blog</h3>
+        <p>Our blog covers a wide range of mortgage-related topics, from biweekly payment strategies and the power of extra principal to refinancing considerations and comparing 15-year versus 30-year terms. Every article is written with real numbers and actionable advice&mdash;no filler, no sales pitches.</p>
+
+        <h3>Privacy-First Approach</h3>
+        <p>Your calculator data stays in your browser. We do not collect, store, or transmit the financial details you enter into the calculator. Your mortgage information is your business, not ours.</p>
+
+        <h2>Why Trust Us</h2>
+
+        <p>We are not a bank, lender, or financial institution. We do not sell mortgage products or earn commissions from lenders. Our only revenue comes from advertising displayed on the site. This means our advice and calculations are unbiased&mdash;we have no financial incentive to steer you toward any particular product or decision.</p>
+
+        <p>That said, we are not financial advisors. The information and tools on this site are for educational purposes only. We always recommend consulting with a qualified financial professional before making major financial decisions. For full details, please review our <a href="/terms-of-service">Terms of Service</a>.</p>
+
+        
+<h2>Our Editorial Standards</h2>
+
+<p>Every piece of content published on PayoffMortgage.org goes through a structured review process:</p>
+
+<ul>
+  <li><strong>Research-backed content</strong> — All claims and recommendations are cross-referenced with authoritative sources before publication.</li>
+  <li><strong>Regular updates</strong> — We review and update existing content quarterly to ensure accuracy as regulations, norms, and data change.</li>
+  <li><strong>Calculator validation</strong> — Our calculator formulas are tested against known results and industry-standard tools to ensure accuracy.</li>
+  <li><strong>Editorial independence</strong> — Our content recommendations are not influenced by advertising partnerships. We maintain a clear separation between editorial content and sponsored placements.</li>
+</ul>
+
+<h2>Our Research Methodology</h2>
+
+<p>Our editorial team focuses on mortgage payoff strategies, interest rate analysis, and home loan optimization. We validate our calculations against CFPB mortgage tools, Freddie Mac rate survey data, and National Association of Realtors statistics.</p>
+
+<p>Our mortgage calculations use standard amortization formulas (M = P[r(1+r)^n] / [(1+r)^n-1]) validated against CFPB's mortgage calculator. Interest rate data is sourced from Freddie Mac's Primary Mortgage Market Survey, and our payoff strategy recommendations are grounded in published financial planning research.</p>
+
+<p>We are committed to transparency. If you believe any content on this site contains an error, please <a href="/contact">contact us</a> and we will review and correct it promptly.</p>
+
+<h2>Get in Touch</h2>
+
+        <p>We value feedback from our users. If you have suggestions for improving the calculator, ideas for blog topics, or questions about the site, we would love to hear from you.</p>
+
+        <p>Reach us at <a href="mailto:contact@payoffmortgage.org">contact@payoffmortgage.org</a> or visit our <a href="/contact">Contact page</a>.</p>
+
+        <!-- CTA -->
+        <div class="cta-card">
+          <h3>Try the Mortgage Payoff Calculator</h3>
+          <p>Enter your loan details and see exactly how much time and money you can save.</p>
+          <a href="/" class="btn">Open Calculator</a>
+        </div>
+
+        <!-- Ad Slot -->
+        <div class="ad-slot">
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-8767713037568144"
+            data-ad-slot="2"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <p>&copy; 2026 PayoffMortgage.org. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <div class="cookie-bar" id="cookie-consent" style="position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#e2e8f0;padding:14px 20px;font-size:0.85rem;display:flex;align-items:center;justify-content:center;gap:16px;z-index:9999;flex-wrap:wrap;">
+    <span>We use cookies for analytics and advertising. By continuing, you agree to our <a href="/privacy-policy" style="color:#0f766e;text-decoration:underline;">Privacy Policy</a>.</span>
+    <button onclick="document.getElementById('cookie-consent').style.display='none';document.cookie='cc=1;path=/;max-age=31536000'" style="background:#0f766e;color:#fff;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-weight:600;font-size:0.82rem;white-space:nowrap;">Got it</button>
+  </div>
+  <script>if(document.cookie.indexOf('cc=1')!==-1)document.getElementById('cookie-consent').style.display='none';</script>
+</body>
+</html>
